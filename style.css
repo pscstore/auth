@@ -1,8 +1,9 @@
 body {
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .flex {
@@ -39,21 +40,34 @@ body {
   color: #45cc6d;
 }
 
+.text-c-gray {
+  color: #CCCCCC;
+}
+
 .text-a-c {
   text-align: center;
 }
 
-form {
-  width: 100%;
+.url {
+  color: #009bfb;
+  text-decoration: none;
+}
+
+.form {
+  width: 95%;
+  text-align: center;
   max-width: 550px;
 }
 
+.form form {
+  width: 100%;
+}
+
 input {
-  width: 90%;
+  width: 93%;
   outline: none;
   border: solid 2px #f2f2f2;
-  font-size: 1.1em;
-  margin: 2px 0;
+  margin: 5px 0;
   padding: 15px 10px;
   border-radius: 4px;
 }
@@ -67,10 +81,73 @@ input:active {
 button {
   outline: none;
   border: none;
-  width: 96%;
+  width: 100%;
   color: #fff;
   font-size: 1em;
   padding: 15px 0px;
   border-radius: 4px;
   background: #009bfb;
+  margin: 10px 0;
+}
+
+.password-lable {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.show-hide {
+  left: 87%;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  position: absolute;
+  z-index: 999;
+}
+
+.line-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  margin: 20px 0;
+  /* Adjust padding as needed */
+}
+
+.line-box .line {
+  flex: 1;
+  /* Makes the lines take up all available space */
+  height: 1px;
+  /* Thickness of the line */
+  background-color: #ccc;
+  /* Color of the line */
+  margin: 0 10px;
+  /* Space between the line and "or" text */
+}
+
+.line-box span {
+  font-size: 16px;
+  /* Adjust font size as needed */
+  color: #ccc;
+  /* Color of the "or" text */
+}
+
+.thard-party-auth {
+  outline: none;
+  border: none;
+  width: 98%;
+  color: #000000;
+  font-size: 1em;
+  padding: 7px 0px;
+  border: solid 2px black;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-weight: 444;
+}
+
+.url .logo {
+  margin: 0 !important;
+  margin-right: 30px;
 }
